@@ -1,8 +1,22 @@
-<link href="styles.css" type="text/css" rel="stylesheet"  />
-		<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:700italic,700|Noto+Sans' rel='stylesheet' type='text/css'>
 
 * {
 	background-color: #0C202E;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+}
+
+header {
+	clear
 }
 
 .name {
@@ -10,15 +24,12 @@
 	text-align: center;
 }
 
-header {
-
-	text-align: left;
-}
-
 aside {
 	float: left;
 	width: 210px;
-	padding-right: 30px;
+	padding-top: -10px 
+	padding-left: 30px;
+	padding-right: 30px; 
 }
 
 main {
