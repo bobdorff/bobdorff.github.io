@@ -1,4 +1,4 @@
-
+/* basic page color and link behavior*/
 * {
 	background-color: #0C202E;
 }
@@ -11,47 +11,43 @@ a:hover {
 	text-decoration: underline;
 }
 
+/* format unordered list without bullets*/
 ul {
 	list-style-type: none;
 }
 
-header {
-	clear
+/* sidebar formatting*/
+.name {
+	text-align: center;
+	font-size: 3em;
+	font-family: 'Archivo Narrow';
 }
 
-.name {
-
-	text-align: center;
+.me_pic {
+	border: 1px solid #e8e2de;
 }
 
 aside {
 	float: left;
 	width: 210px;
-	padding-top: -10px 
+	padding-top: -10px; 
 	padding-left: 30px;
 	padding-right: 30px; 
 }
+	aside a {
+	font-family: 'Archivo Narrow', sans-serif;
+	color: #71D5FF;
+	font-size: 1.5em;
+	}
 
+/* article area formatting */
 main {
 	float: right;
 	width: 720px;
-}
-
-.photo {
-	border: 1px solid #e8e2de;
-}
-
-h1 {
-	font-size: 48px;
-}
-
-aside, a {
-	font-family: 'Archivo Narrow', sans-serif;
-	color: #71D5FF;
-	font-size: 125%;
-}
-
-main {	
 	font-family: 'Noto Sans', sans-serif;
 	color: #E8E2DE;
 }
+
+
+
+
