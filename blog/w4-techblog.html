@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<link href="stylesheets/default.css" type="text/css" rel="stylesheet"  />
+		<link href="stylesheets/blog.css" type="text/css" rel="stylesheet"  />
+		<link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:700italic,700|Noto+Sans' rel='stylesheet' type='text/css'>
+		<title> Bob Dorff is still a threat </title>
+	</head>
+
+	<body>
+		<div id="pagesize">
+			<header>
+					<a id="namelink"href="index.html"><h1 class="name">Bob Dorff</h1></a>
+			</header>		
+			<aside>
+					
+				<img class="me_pic" src="../imgs/blogpic-210.jpg" alt="Picture of Bob"  /><!--Picture of me-->
+				<nav>
+					<ul>
+						<li>
+							<a href="blog-index.html">Blog</a>
+						</li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Resume</a></li>
+					</ul>
+				</nav>
+			</aside>	
+			<main>
+			<br>
+				<article>
+					<h2> Organizing the chaos<h2>
+					<h4> 11/15/2015 <h4>
+					<hr>
+					<p>
+						I am not an organized person. During my first year of college, my roommate and I lived in what could charitably be called "squalor." At one point, things got so bad that we named the enormous pile of refuse in the corner of the room "Trash Mountain." Those were dark days. 
+					</p>
+					<p>
+						Since then, I've gotten better at organizing my life, though it's a daily struggle to consistently put things where they belong. Sometimes, when I am tempted to put something in a random place rather than where it belongs, I remind myself that putting the item away in a consistent place will make it easier for me to find it later on. That sounds silly, because it's such a basic concept, but it always motivates me to put things in the right place. 
+					</p>	
+					<p>
+						I'm smarter than a computer, and it's hard for me to locate things if I don't put them away properly. With that in mind, it's critical for programmers to give computers explicit instructions about where data is and how it can be accessed in the future. After all, putting something away in the right place makes it easy to find it the next time you need it. In Ruby, programmers use two data structures to store information: Arrays and Hashes. 
+					</p>
+					<p>
+						Arrays and hashes are extremely similar. On a basic level, each allows you to name a collection of data and then access that data later on. The difference between these structures is related to how data gets stored and labeled. In an array, each item is assigned a number, counting up from 0, based on its place within the array. That means the first item is numbered 0, the next is 1, and so on. If you want to grab a piece of information from inside an array, you can use these numbers to pick the specific data you want. 
+					</p>
+					<p>
+						Sometimes, the number system used by arrays is too simplistic, and it can create some weird issues. Because each number is based on the position of the data within the array, reording the array changes the number that's assigned to each bit of information. That means 0 can refer to one item today and another tomorrow. That can be a problem. 
+					</p>
+					<p>
+						Hashes fix this issue. When you create a hash, you assign a "key" to each value. This key is always associated with the value, regardless of where the value falls inside the array. That means that you can use that key to grab that information at any time and you'll be sure to get the right value from the hash. 
+					</p>
+					<p>
+						As you can probably tell, arrays work well for collections where information is not associated with other information. An array is sort of like a grocery list, the order doesn't really matter, because you'll be able to get everything in the same place. 
+					</p>
+					<p>
+						Hashes would be better for a situation where you need to associate different pieces of information with each other. If you were getting information about people's favorite foods for instance, you'd probably want to use a hash. That would let you write a bit of code that looked like this:
+						<code>
+						fav_foods = {
+						:Becky => "Pizza",
+						:Sam => "Tacos",
+						}  
+						</code>
+						In that example, the names on the left are keys and the foods on the right are data. That means whenever I ask the "fav_foods" hash to tell me the favorite food associated with the name "Becky," I'll get the same answer. 
+					</p>
+					<p> 
+						Hashes and arrays can get very complicated very quickly, because you can store hashes or arrays as data inside other hashes and arrays. With a bit of hard work, however, these data structures can ensure your program always knows where data is when it needs to access it. 
+					</p>
+					</article>
+<a href="#">Older</a>
+<a href="#">Newer</a>
+</main>
+</body>
+</html>
