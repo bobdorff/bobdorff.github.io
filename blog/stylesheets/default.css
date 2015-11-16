@@ -80,6 +80,12 @@ main {
 	margin-top: -50px;
 }
 
+#older {
+	float: left;
+}
+#newer {
+	float: right;
+}
 
 
 
