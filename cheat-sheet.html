@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700italic' rel='stylesheet' type='text/css'>
+	<link href="cheatstyle/default.css" type="text/css" rel="stylesheet"  />
+	<title>Cheat Sheet</title>
+	<meta charset="utf-8"/>
+</head>
+<body>
+	<div id="container">
+	<header>
+		<h1>CHEAT SHEET</h1>
+		<p>
+ 			for Ruby strings, integers, arrays and hashes
+		</p>	
+		<hr>
+	</header>
+	<div id="strings">
+		<h2> 
+			Strings
+		</h2>
+		<ul>
+			<li>
+				Strings are representations of characters that your program can maniuplate. Put more simply, they're words or letters that you can analyze or output to the screen.
+			</li>	
+			<li>
+				To indicate that characters should be treated as a string, you put the characters inside single ('') or double (" ") quotation marks. 	
+			</li>	
+			<li>
+				Strings can be compared using the <, >, =  and <=> operators. When two different strings are compared, the longer string is considered "greater". 	
+			</li>
+			<li>
+				Characters in a string that would affect interpretation can be escaped. The escape character is the backslash (\). placing the escape character in front of quotation marks makes the program interpret the quotes as a character in the string instead of a signal to end the string. You can also use escape commands, such as /n, which will impact the formatting of characters. /n, for instance will create a newline within the string.	
+			</li>
+			<li>
+				You can call a range of methods on strings to manipulate them in different ways and measure their attributes. Additionally, you can use mathmatical operators on strings to manipulate them. For instance, placing a "+" between two strings will combine them into a single string. 
+			</li>	
+
+		</ul>
+	</div>
+	<div id="ints">
+		<h2> 
+			Integers
+		</h2>
+		<ul>
+			<li>
+				Integers are whole numbers. That means they don't feature any numbers to the right of the decimal point. (If they did, they'd be "floats.")
+			</li>	
+			<li>
+				You can place the character that represents a number in a string, but if the number is a string, it won't be an integer. That means it will not respond to mathmatical calculations and other actions like you'd expect.	
+			</li>	
+			<li>
+				Integers can be compared using the <, >, =  and <=> operators. You can also use the +, -, / and * symbols to add, subtract, multiply and divide. 
+			</li>
+			<li>
+				Because integers don't contain fractional elements, division that would result in a remainder will be rounded down to the nearest integer value. If you want to grab the raminder associated with division, you can use the modulo (%) operator to return the amount left over after division. 	
+			</li>
+			<li>
+				Integers can be converted to strings using the #to_s method. Conversely, if you call #to_i on a string, it will not necessarily return a numerical value. If the string only contains words, you will get an integer result of 0. Otherwise, any number characters will be pulled out and returned.  
+			</li>	
+
+		</ul>
+	</div>
+	<div id="arrays">
+		<h2> 
+			Arrays
+		</h2>
+		<ul>
+			<li>
+				An array is an ordered collection of objects. Each item in the group is indexed with an integer. The integers begin at "0" for the first item and count up from there. 
+			</li>	
+			<li>
+				If the order of items within an array changes, the indexes will also change. If you add a new item to the start of an array, every other item will see its index increase by one. The index only refers to that item in the current state of the array. 	
+			</li>	
+			<li>
+				Arrays are represented in code by brackets ([]). The items in the array are represented as comma-separated objects between the brackets.  	
+			</li>
+			<li>
+				It is possible to nest an array inside another array or inside a hash. Additionally, a hash can contain an array. 	
+			</li>
+			<li>
+				To access a specific item in an array, you use its index number and bracket notation. If we had an array called "things," we could use "things[0]" to access the first item in the array. If "things" was an array that consisted of arrays, we'd need to use slightly different notation to access the inner levels of the nested elements. For instance, "things[0][0]" would access the first item in the first array "things" contained. 
+			</li>	
+			<li>
+				You can also enumerate over an array using the "each" method or other methods included in the enumerable module. These methods allow you to work through the array object by object and modify the individual elements as you go. Depending on the type of method used, you can either chnage the array in place or output the resulting information to a new array or other object. 
+			</li>	
+
+		</ul>
+	</div>
+	<div id="hashes">
+		<h2> 
+			Hashes
+		</h2>
+		<ul>
+			<li>
+				Hashes are collections of objects that allow you to assign each item its index. Unlike arrays, where an object's index is determined by its position inside the array, an object in a hash is always associated with the same index, and that index can be an string or a number. The object stored in a hash is called a "value" while the index you assign that item is known as a "key".
+			</li>	
+			<li>
+				Keys must be unique in hashes. If two items were given the same key, it would be impossible for the program to know which value you were referencing. Because each key is unique, hashes can be reordered without affecting the keys. A key will always refer to its assigned value, no matter how the order within a hash shifts. 	
+			</li>	
+			<li>
+				Hashes are represented with curly braces "{}" that contain all of the key - value pairs. Each key is assigned when the value is inserted into the hash. There are several ways to write this bit of code. If they keys are symbols, this can be written with the key name followed by a colon and the value. In other cases, you may want to write it with a rocket => pointing from the key to the value. Finally, it's also possible to add elements to an array using bracket notation like this: <code> hashname[keyname] = value</code>
+			</li>
+			<li>
+				Items in a hash can be accessed using the bracket notation seen above. 	You can also iterate through a hash as you would an array, though you need to create multiple variable values for the code block. One variable will represent the key while the other stands in for the associated value. 
+			</li>
+			<li>
+				Because a key - value pair remains consistent even if you sort a hash, you can be confident that you will always get the same value for a specific key. Prior to any sorting, however, the hash will enumerate in the order keys were inserted into the hash.  
+			</li>	
+
+		</ul>
+	</div>
+</div>
+
+</body>
+</html>
