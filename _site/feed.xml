@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zero Stars</title>
+    <description>Zero Stars is Bob Dorff&#39;s personal corner of the Web. Contact him at the following locations:
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 20 Dec 2015 22:31:01 -0500</pubDate>
+    <lastBuildDate>Sun, 20 Dec 2015 22:31:01 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Recursion Diversion</title>
+        <description>&lt;p&gt;
+		Throughout the past eight weeks, recursion has lurked in the shadowy corners of our programming challenges, but I’ve never known exactly what recursion is or how it can be used in a programming context. It’s clear that recursion is important within programming, and I sensed that it might provide easier solutions to some of our challenges than the actual solutions I had created, but I had no understanding of what constituted a recursive statement. Today I did a bit of research into recursion, and it seems like a very simple concept with very complex implications for how programs can be structured. 
+	&lt;/p&gt;
+	&lt;p&gt;
+		On a very basic level, recursion is easy to understand. A routine that calls itself is recursive. That means a recursive statement contains itself and that statement contains itself, all the way to infinity. The best way I found to understand this concept is to think about a picture that contains someone holding a picture that is a replica of the picture you’re looking at. Inside that picture, there’s a smaller version of the picture you’re looking at and within that smaller picture there’s an even smaller version of the image. This demonstrates both the structure of recursive statements and a potential issue with recursion. If a statement calls itself, how will it ever &lt;i&gt;stop&lt;/i&gt; calling itself?
+	&lt;/p&gt;
+	&lt;h3&gt;
+		The Base Case
+	&lt;/h3&gt;
+	&lt;p&gt;
+		A statement will stop calling itself when it reaches the “base case.” Whenever you create a recursive statement, you must also create a base case that will end the recursion, otherwise the statement will call itself indefinitely. You can accomplish this by creating an ‘if’ statement that prevents the statement from looping back into recursion when certain conditions are met. &lt;/p&gt;
+		&lt;p&gt;When recursion is useful&lt;br&gt;Recursion is great for problems that can be broken down into a single, repeatable sub-task. A recursive statement can cruise through the task over and over again until it reaches the base case and is completed.
+	&lt;/p&gt;
+	&lt;p&gt;
+		This is an exceptionally basic overview of recursion, and I look forward to learning more about this technique in the future. Until then, I’ll examine whether or not recursion is a valuable tool in my projects from now on. 
+	&lt;/p&gt; </description>
+        <pubDate>Sun, 13 Dec 2015 00:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/dbc/blog/2015/12/13/recursion-diversion.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/dbc/blog/2015/12/13/recursion-diversion.html</guid>
+        
+        
+        <category>DBC</category>
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Orienting your objects: Or, hashing out the difference between Javascript objects and Ruby hashes</title>
+        <description>&lt;p&gt;
+		Over the past few weeks, we&#39;ve gotten pretty familiar with hashes in Ruby. A hash is a list of items, and each individual item in the list has a unique identifier, or key. When you reference that key, you&#39;re able to retrieve its associated value from inside the hash. That&#39;s hugely useful when you need to store or organize information that you&#39;re going to need to reference again later on. There are several ways to create a Ruby hash, but one of the clearest is the implicit form, which looks something like this:
+	&lt;/p&gt;	
+	&lt;p&gt;	
+		&lt;code&gt;
+			music_album = {
+				title: &quot;WhatFunLifeWas&quot;,
+				artist: &quot;Bedhead&quot;,
+				year: &quot;1994&quot;,
+				genre: &quot;Rock&quot;
+			}
+		&lt;/code&gt;
+	&lt;/p&gt;
+	&lt;p&gt;
+			Once you&#39;ve created a hash like this, you can always access the stored information by referencing the specific key you need. The key will always refer to the same value, and that consistency is really helpful when you start manipulating a lot of data. 
+	&lt;/p&gt;
+	&lt;p&gt;
+			This type of data structure is so useful that it has an equivalent in JavaScript, though the JavaScript construction isn&#39;t called a hash. Instead, JavaScript has &quot;objects&quot;, which work a bit differently than a Ruby hash. It&#39;s worth noting that everything in JavaScript is an object, but certain objects can contain a data structure that works like a hash. To make things a bit clearer, let&#39;s look at how we&#39;d make an object in JavaScript:
+	&lt;/p&gt;
+	&lt;p&gt;
+		&lt;code&gt;
+			var music_album = {
+				title: &quot;WhatFunLifeWas&quot;,
+				artist: &quot;Bedhead&quot;,
+				year: &quot;1994&quot;,
+				genre: &quot;Rock&quot;
+			}
+		&lt;/code&gt;
+	&lt;/p&gt;	
+    &lt;p&gt;
+    		The structure here is very similar to how we made our Ruby hash, though we do have to let JavaScript know that we&#39;re naming a variable with the &quot;var&quot; at the beginning of the code. From here, the object will work like a hash with some additional capabilities. JavaScript lets you access object&#39;s values with either dot notation or bracket notation, while Ruby only lets you use brackets. That means that &lt;code&gt;music_album.title&lt;/code&gt; will deliver &quot;WhatFunLifeWas&quot; in JavaScript. In Ruby you have to use &lt;code&gt;music_album[title]&lt;/code&gt; to get the same information. That notation will also work in in JavaScript. 
+    &lt;/p&gt;	
+    &lt;p&gt;
+    		Beyond letting you access the info inside an object in different ways, JavaScript lets you put more types of informating into its data structures. In JavaScript, you can create functions inside your objects and call them like any other value that&#39;s stored in the object. 
+    &lt;/p&gt;
+    &lt;p&gt;
+    		As is probably clear by now, the big difference between Ruby hashes and JavaScript objects seems to be flexibility. A JavaScript class can do what a hash does and has other capabilities. That complexity can be overwhelming, but it also means that objects have more uses throughout JavaScript code. 
+    &lt;/p&gt;</description>
+        <pubDate>Sat, 05 Dec 2015 00:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/dbc/blog/2015/12/05/orienting-your-objects.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/dbc/blog/2015/12/05/orienting-your-objects.html</guid>
+        
+        
+        <category>DBC</category>
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Class is in session</title>
+        <description>&lt;p&gt;Programming can often feel like an exercise in cutting corners. While cutting too many corners can result in buggy or confusing code, carefully picking where to expend your programming efforts can save you a bunch of time and make you feel like a programming super genius. One of the built in ways to cut out extra work when programming in Ruby involves classes which are chunks of code that contain methods and variables. Because Ruby is an object-oriented programming language, every chunk of code in the language, whether a method, a class, a variable, a string or an integer is an object. Once you create a class that contains certain methods and variables, you can create new objects that belong to that class. These objects can access all of the methods and variables that belong to that class, which means you only need to write all those bits of code once. &lt;/p&gt;
+&lt;p&gt;To give you a better sense of how this works, we will create a new class and use it like we would in a program. If we wanted to create a class with methods to take an array of words and combine them into a single alphabetized string, it would look something like this:&lt;/p&gt;
+&lt;code&gt;&lt;p&gt;class Alphabetizer(words)&lt;/p&gt;
+	&lt;p&gt;def initialize&lt;br&gt;
+		@words = words&lt;br&gt;end&lt;/p&gt;
+		&lt;p&gt;def a_to_z&lt;br&gt;@words = @words.sort&lt;br&gt;end&lt;/p&gt;
+		&lt;p&gt;def string_maker&lt;br&gt;@words = @words.join&lt;br&gt;end&lt;/p&gt;
+		&lt;p&gt;end&lt;/p&gt;&lt;p&gt;&lt;/code&gt;&lt;/p&gt;
+		&lt;p&gt;Now that we have a defined class, we can create new objects that are instances of the class. When we do this, the new object is initialized in accordance with the stuff we wrote in the initialize method for our class. In this case, that means objects we initialize as part of this class will need to be an array of words so they can be set equal to @words.&lt;/p&gt;
+		&lt;p&gt;&lt;code&gt;&lt;/p&gt;
+		&lt;p&gt;word_set = Alphabetizer.new([location, comma, ballistic]) &lt;/p&gt;
+		&lt;p&gt;&lt;/code&gt;&lt;/p&gt;
+		&lt;p&gt;Once that is done, we can call the class methods on our newly initialized object. &lt;/p&gt;
+		&lt;p&gt;&lt;code&gt;&lt;/p&gt;
+		&lt;p&gt;word_set.string_maker&lt;/p&gt;
+		&lt;p&gt;word_set.a_to_z&lt;/p&gt;
+		&lt;p&gt;&lt;/code&gt;&lt;/p&gt;
+		&lt;p&gt;To wrap up, we will talk about the variable @words. This is called an instance variable, and the methods we have in this class are called instance methods. Objects are instance variables or methods when they can be used by any object that is initialized as part of a class. Once we start manipulating @words in one method, other methods can take the manipulated version and mess with it. That is not the case for local variables, which can only be used in the method where they are defined. &lt;/p&gt;</description>
+        <pubDate>Mon, 30 Nov 2015 00:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/dbc/blog/2015/11/30/class-is-in-session.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/dbc/blog/2015/11/30/class-is-in-session.html</guid>
+        
+        
+        <category>DBC</category>
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Can I see some I.D.?</title>
+        <description>&lt;p&gt;
+		If you&#39;re new to the world of web development, cascading style sheets, or &quot;CSS&quot; will be one of the most confounding things you have every encountered. HTML, which is the language used to create the skeleton of every website you visit, is relatively easy to understand. Each piece of content on a website, be it a link, article or photo, is assigned an HTML &quot;tag&quot;. These tags tell a user&#39;s web browser how to render different parts of a web page. For instance, whenever a browser sees a tag featuring the letter &quot;p,&quot; it knows that the site&#39;s author wants the information associated with that tag to display as a new paragraph. 
+	&lt;/p&gt;
+	&lt;p&gt;
+		For modern websites that feature expansive and beautiful layouts, simple HTML tags don&#39;t provide enough informaiton. They can tell a browser how to display some information, but they aren&#39;t great at telling the browser where that information should be on the page and how individual elements should respond to a user&#39;s inputs. That&#39;s where CSS comes in. A programmer can assign traits to different HTML tags using CSS, and that makes it possible to create very complex layouts. For example, a programmer could use CSS to make every piece of content associated with a &quot;p&quot; tag on a webpage green. 
+	&lt;/p&gt;
+	&lt;p&gt;
+		Programmers can achieve some amazing stuff by assigning CSS characteristics to specific HTML tags, but sometimes a programmer will want to do something to several different types of HTML tags, or a group of HTML tags that only apply to a specific part of a page. That&#39;s where classes and IDs come in. 
+	&lt;/p&gt;
+
+		&lt;h3&gt;Class is in session&lt;/h3&gt;
+	&lt;p&gt;
+		With a class or ID, a programmer can pull out specific items and assign them traits, regardless of what their HTML tags are. Classes are used to assign a group of CSS traits to multiple items, while IDs are used to give a single piece of a website new characteristics. As an example, if a programmer wanted links about a certain topic to behave differently than other links on a page, they could create a class called &quot;topiclink&quot;. They could then assign special traits to that class. Whenever they assigned a piece of content to the &quot;topiclink&quot; class, it would get the same traits as all the other pieces of content with that class designation. 
+	&lt;/p&gt;
+	&lt;p&gt;
+		IDs are more specific. When someone wants one part of a site to have different formatting than other pieces, they can give that single piece of a content a unique ID name. Then, they can use CSS to assign that ID characteristics that will not be replicated elsewhere on the site. 
+	&lt;/p&gt;
+	&lt;p&gt;
+		If you&#39;re ever confused about when to use classes or IDs, you can think of it this way: In school, everyone in a class learns the same material. That&#39;s like a CSS class, because CSS traits assigned to a class affect all the members equally. An ID is more personal. You have an ID card that identifies you, and you&#39;re just one person. IDs in CSS are similarly specific and singular. 
+	&lt;/p&gt;</description>
+        <pubDate>Sun, 08 Nov 2015 00:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/dbc/blog/2015/11/08/can-i-see-some-id.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/dbc/blog/2015/11/08/can-i-see-some-id.html</guid>
+        
+        
+        <category>DBC</category>
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Week one adventures: How I learned to stop worrying and love the Git</title>
+        <description>&lt;p&gt;
+     I&#39;m going to tell you about a world without fear where you can experiment to your heart&#39;s content without ever feeling like you&#39;ll make a mistake that screws up all your work and makes you lose progress.
+    &lt;/p&gt; 
+    &lt;p&gt;
+    That sounds too good to be true, right?
+    &lt;/p&gt;
+    &lt;p&gt;
+    Crazily enough, this dreamworld where your mistakes go unpunished totally exists and it&#39;s all thanks to a process known as version control.
+    &lt;/p&gt;
+   	&lt;p&gt;
+    I am terrible at computer games, but that didn&#39;t stop me from playing too many of them as a boy. Rather than developing the hand-eye coordination necessary to successfully play these games, I crept through them inch by inch using save points. In old computer games, it&#39;s easy to pause the game, save your position in the level and hop back into the action. I saved my progress approximately every two minutes while playing those games, and my diligence meant that I never lost progress despite constantly dying.  
+    &lt;/p&gt;
+    &lt;p&gt;
+    Version control is kind of like that. 
+    &lt;/p&gt;
+      &lt;h3&gt;
+        Being in control
+      &lt;/h3&gt;
+  	&lt;p&gt;
+    When you use version control, you regularly save the project you&#39;re working on so you can return to that specific instance of its life at any time. When you save a document on your computer, you usually overwrite the document with each new save. That means you can&#39;t return to the copy of the document you saved three saves ago, because it no longer exists. With version control, all the different times you save a file stick around, and you can hop to any of them. That means you can&#39;t make permanent mistakes, because it&#39;s always possible to roll things back to an earlier state.
+  &lt;/p&gt;
+  &lt;p&gt;
+
+	It would be possible for you to make your own version control system by saving different copies of a file to your personal computer, but that&#39;s difficult, limiting and unncessary. Instead, you can use specially designed version control software that will automate a lot of the process and make your life easy. It&#39;s time to get git
+  &lt;/p&gt;
+
+	&lt;h3&gt; 
+  		Git in gear
+	&lt;/h3&gt;
+  &lt;p&gt;
+	Git is a piece of software that lives on your computer. You can use it to make and store copies of a file that you&#39;re working on. Whenever you want to save the current state of a file in git, you create a commit. A commit is like a snapshot of the file&#39;s current state. When you commit the changes you&#39;ve made to a file, you&#39;re not necessarily overwriting an older version of the file. Git allows you to  on &quot;branches&quot; which are copies of the main project. When you work on a branch, you have access to all the information in the main project, but you don&#39;t run the risk of damaging the work you&#39;ve already completed. 
+  &lt;/p&gt;
+  &lt;p&gt;
+  Commits save your progress on a branch. If you want to include the work you completed on a branch in the main project, you can, but the commit system ensures there are multiple copies of your work along the way. Each commit is a checkpoint, and you can always return to that spot if things get messed up later on. 
+
+  &lt;p&gt;
+  Git is a piece of software that lives on your computer. You can use it to make and store copies of a file that you&#39;re working on. Whenever you want to save the current state of a file in git, you create a commit. A commit is like a snapshot of the file&#39;s current state. When you commit the changes you&#39;ve made to a file, you&#39;re not necessarily overwriting an older version of the file. Git allows you to work on &quot;branches&quot; which are copies of the main project file. When you work on a branch, you have access to all the information in the main, working file, but you don&#39;t run the risk of damaging the work you&#39;ve already completed. 
+  &lt;/p&gt;
+  &lt;p&gt;
+  Commits save your progress on a branch. If you want to include the work you completed on a branch in the main file, you can, but the commit system ensures there are multiple copies of your work along the way. Each commit is a checkpoint, and you can always return to that spot if things get messed up later on. 
+  &lt;/p&gt;
+  	&lt;h3&gt;
+  	The other piece of the puzzle
+	&lt;/h3&gt;
+  &lt;p&gt;
+  Git lives on your local computer, but that&#39;s just one part of the equation. GitHub is a site that syncs with git to expand its functionality and truly harness the power of version control. 
+  &lt;/p&gt;
+  &lt;p&gt;
+	Every project in git is stored in a &quot;repository&quot; that contains all its relevant files. With GitHub, you can store these repositories on the Internet and share them with other people. This provides a ton of benefits for you as an individual developer and makes it way easier for large groups of people to work on a project together
+  &lt;/p&gt;
+  &lt;p&gt;
+	When your git repositories are stored online, you don&#39;t need to worry about a local storage failure destroying your work. That alone makes GitHub worthwhile, but it&#39;s just one part of the system&#39;s functionality. When you share a repository with other people, they&#39;re able to create clones of that repository that they can work on themselves. If they ever have changes they feel should be integrated back into the main project, they can submit them to the main repository. Those changes won&#39;t be automatically added to the project, however. Instead, a request will be posted that allows other people to view the changes. If those people think the changes belong in the main project, they can add them. Otherwise, the main project goes on untouched.
+	&lt;/p&gt;
+	&lt;p&gt;
+	This system makes it very easy for a huge number of people to work on a sprawling project without stepping on each others&#39; toes and breaking everything all the time. 
+	&lt;/p&gt;
+	&lt;p&gt;
+	Basically, version control turns your work into a video game where you can save and restart from anywhere. When you combine that power with GitHub, you can safeguard your progess and let other people help you get a job done. It&#39;s pretty hard to argue against that. 
+	&lt;/p&gt;</description>
+        <pubDate>Sat, 24 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://yourdomain.com/dbc/blog/2015/10/24/week-one-adventures.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/dbc/blog/2015/10/24/week-one-adventures.html</guid>
+        
+        
+        <category>DBC</category>
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>
