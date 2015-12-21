@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<h3><em>Latest Post</em></h3>
+
+<div class="blog-index">  
+  {% assign post = site.posts.first %}
+  {% assign content = post.content %}
+  {% include post_detail.html %}
+</div>
+
+<a href="/blog">Read more blogs</a> 
